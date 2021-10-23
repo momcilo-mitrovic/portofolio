@@ -1,8 +1,28 @@
+.Header {
+  background: rgba(255, 255, 255, 0.8);
+  border-bottom: black 2px solid;
+}
+
 .Header-header {
   display: flex;
   align-items: center;
+  min-height: 82px;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
 }
 
 .Header-header nav ul {
   display: flex;
+  min-width: 500px;
+  justify-content: space-around;
+}
+
+.Header-header h1 {
+  color: var(--color-charcoal);
+}
+
+.Header-header nav {
+  text-transform: uppercase;
+  font-size: 20px;
 }
