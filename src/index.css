@@ -36,3 +36,11 @@ ol {
   max-width: 1280px;
   margin: 0 auto;
 }
+
+.light-mode {
+  background: white;
+}
+
+.dark-mode {
+  background: black;
+}

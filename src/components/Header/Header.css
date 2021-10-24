@@ -1,6 +1,14 @@
 .Header {
   background: rgba(255, 255, 255, 0.8);
   border-bottom: black 2px solid;
+  position: sticky;
+  top: 0px;
+  z-index: 400;
+}
+
+.Header a {
+  color: #333;
+  text-decoration: none;
 }
 
 .Header-header {
@@ -25,4 +33,21 @@
 .Header-header nav {
   text-transform: uppercase;
   font-size: 20px;
+}
+
+.Header a:hover {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.dark-mode .Header {
+  background: rgb(0 0 0 / 80%);
+}
+
+.dark-mode .Header-header h1 {
+  color: white;
+}
+
+.dark-mode .Header a {
+  color: white;
 }
