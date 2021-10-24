@@ -1,8 +1,8 @@
-import './App.css'
-import Card from './components/Card/Card'
-import Header from './components/Header/Header'
-import Hero from './components/Hero/Hero'
-import Title from './components/Title/Title'
+import "./App.css";
+import Card from "./components/Card/Card";
+import Header from "./components/Header/Header";
+import Hero from "./components/Hero/Hero";
+import Title from "./components/Title/Title";
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
       <Title />
       <Card />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

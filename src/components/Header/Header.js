@@ -1,9 +1,13 @@
 import "./Header.css";
+import useDarkMode from "use-dark-mode";
+import Toggle from "../../components/Toggle/Toggle";
 
 function Header() {
+  const darkMode = useDarkMode(false);
+
   return (
     <div className="Header">
-      <div class="container">
+      <div className="container">
         <header className="Header-header">
           <h1>Momcilo Mitrovic</h1>
           <nav>
@@ -25,6 +29,7 @@ function Header() {
               </li>
             </ul>
           </nav>
+          <Toggle checked={darkMode.value} onChange={darkMode.toggle} />
         </header>
       </div>
     </div>
