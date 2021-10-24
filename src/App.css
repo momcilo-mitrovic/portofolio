@@ -1,13 +1,13 @@
 .App {
   text-align: center;
-  background-image: url('./app-background.png');
+  background-image: url("./app-background.png");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 }
 
-.dark-mode App:before {
-  content: '';
+.dark-mode .App:before {
+  content: "";
   display: block;
   position: absolute;
   top: 0;

@@ -1,9 +1,9 @@
-import useDarkMode from 'use-dark-mode'
-import Toggle from '../../components/Toggle/Toggle'
-import './Header.css'
+import "./Header.css";
+import useDarkMode from "use-dark-mode";
+import Toggle from "../../components/Toggle/Toggle";
 
 function Header() {
-  const darkMode = useDarkMode(false)
+  const darkMode = useDarkMode(false);
 
   return (
     <div className="Header">
@@ -13,16 +13,16 @@ function Header() {
           <nav>
             <ul>
               <li>
-                <a href="#"> Home </a>
+                <a href="#">Home</a>
               </li>
               <li>
-                <a href="#"> About </a>
+                <a href="#">About</a>
               </li>
               <li>
-                <a href="#">Portofolio </a>
+                <a href="#">Portfolio</a>
               </li>
               <li>
-                <a href="#"> Blog </a>
+                <a href="#">Blog</a>
               </li>
               <li>
                 <a href="#">Contact</a>
@@ -33,7 +33,7 @@ function Header() {
         </header>
       </div>
     </div>
-  )
+  );
 }
 
-export default Header
+export default Header;
