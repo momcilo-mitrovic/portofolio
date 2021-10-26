@@ -44,12 +44,13 @@
 }
 
 .dark-mode .card svg {
-  fill: #fff;
+  fill: white;
 }
 
 .dark-mode .card h4 {
-  color: #fff;
+  color: white;
 }
+
 .dark-mode .card h1 {
-  color: #fff;
+  color: white;
 }
