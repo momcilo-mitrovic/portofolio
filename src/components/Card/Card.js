@@ -3,12 +3,16 @@ import ImageApple from "../../apple.png";
 import ImageAmazon from "../../amazon.png";
 import ImageKurac from "../../kurac.png";
 
+import IconDesign from "./IconDesign";
+import IconDev from "./IconDev";
+import IconApps from "./IconApps";
+
 function Card() {
   return (
     <section className="languages">
       <div className="container flex">
         <div className="card">
-          <img src={ImageApple} />
+          <IconDesign />
           <h4>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi
             saepe alias ducimus tenetur, ut aliquam veniam minus rerum nam
@@ -17,7 +21,7 @@ function Card() {
           </h4>
         </div>
         <div className="card">
-          <img src={ImageAmazon} />
+          <IconDev />
           <h4>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi
             saepe alias ducimus tenetur, ut aliquam veniam minus rerum nam
@@ -26,7 +30,7 @@ function Card() {
           </h4>
         </div>
         <div className="card">
-          <img src={ImageKurac} />
+          <IconApps />
           <h4>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi
             saepe alias ducimus tenetur, ut aliquam veniam minus rerum nam

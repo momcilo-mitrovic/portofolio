@@ -1,5 +1,9 @@
-.blah {
+.Title {
   font-size: 50px;
   margin: 1.5rem 0;
   text-align: center;
+}
+
+.dark-mode .Title {
+  color: #fff;
 }
