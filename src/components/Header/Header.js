@@ -1,10 +1,10 @@
-import "./Header.css";
-import useDarkMode from "use-dark-mode";
-import Toggle from "../../components/Toggle/Toggle";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import './Header.css'
+import useDarkMode from 'use-dark-mode'
+import Toggle from '../../components/Toggle/Toggle'
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
 
 function Header() {
-  const darkMode = useDarkMode(false);
+  const darkMode = useDarkMode(false)
 
   return (
     <div className="Header">
@@ -36,7 +36,7 @@ function Header() {
         </header>
       </div>
     </div>
-  );
+  )
 }
 
-export default Header;
+export default Header
