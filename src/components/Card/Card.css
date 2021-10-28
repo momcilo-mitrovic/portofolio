@@ -7,6 +7,11 @@
   margin: 10px;
 }
 
+.languages {
+  background: white;
+  position: relative;
+}
+
 .languages .card {
   text-align: center;
   margin: 18px 10px 40px;
@@ -36,6 +41,11 @@
 
 .dark-mode .card {
   background-color: #080808;
+  z-index: 400;
+}
+
+.dark-mode .languages {
+  background-color: #1e1e1e;
 }
 
 .card svg {

@@ -1,9 +1,14 @@
 .Title {
   font-size: 50px;
-  margin: 4rem 0 3rem 0;
+  margin: 0;
+  padding: 4rem 0 3rem 0;
   text-align: center;
+  background: white;
+  position: relative;
 }
 
 .dark-mode .Title {
   color: #fff;
+  background: #1e1e1e;
+  z-index: 400;
 }
