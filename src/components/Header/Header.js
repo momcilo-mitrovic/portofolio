@@ -10,28 +10,28 @@ function Header() {
     <div className="Header">
       <div className="container">
         <header className="Header-header">
-          <h1>Momcilo Mitrovic</h1>
-          <Router>
-            <nav>
-              <ul>
-                <li>
-                  <Link to="/">Home</Link>
-                </li>
-                <li>
-                  <Link to="/about">About</Link>
-                </li>
-                <li>
-                  <a href="#">Portfolio</a>
-                </li>
-                <li>
-                  <a href="#">Blog</a>
-                </li>
-                <li>
-                  <a href="#">Contact</a>
-                </li>
-              </ul>
-            </nav>
-          </Router>
+          <h1>
+            <Link to="/">Momcilo Mitrovic</Link>
+          </h1>
+          <nav>
+            <ul>
+              <li>
+                <Link to="/">Home</Link>
+              </li>
+              <li>
+                <Link to="/about">About</Link>
+              </li>
+              <li>
+                <a href="#">Portfolio</a>
+              </li>
+              <li>
+                <a href="#">Blog</a>
+              </li>
+              <li>
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+          </nav>
           <Toggle checked={darkMode.value} onChange={darkMode.toggle} />
         </header>
       </div>
