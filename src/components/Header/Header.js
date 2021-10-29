@@ -1,10 +1,10 @@
-import './Header.css'
-import useDarkMode from 'use-dark-mode'
-import Toggle from '../../components/Toggle/Toggle'
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
+import "./Header.css";
+import useDarkMode from "use-dark-mode";
+import Toggle from "../../components/Toggle/Toggle";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 function Header() {
-  const darkMode = useDarkMode(false)
+  const darkMode = useDarkMode(false);
 
   return (
     <div className="Header">
@@ -22,10 +22,7 @@ function Header() {
                 <Link to="/about">About</Link>
               </li>
               <li>
-                <a href="#">Portfolio</a>
-              </li>
-              <li>
-                <a href="#">Blog</a>
+                <a href="#">Services</a>
               </li>
               <li>
                 <a href="#">Contact</a>
@@ -36,7 +33,7 @@ function Header() {
         </header>
       </div>
     </div>
-  )
+  );
 }
 
-export default Header
+export default Header;
