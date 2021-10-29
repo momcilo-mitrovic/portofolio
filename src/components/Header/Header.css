@@ -55,3 +55,39 @@
 .dark-mode .Header a {
   color: #fff;
 }
+
+.Header h1 a {
+  background: linear-gradient(to left, rgba(255, 255, 255, 0) 50%, #000 50%)
+      100% 98% / 220% 2px no-repeat,
+    linear-gradient(to right, rgba(255, 255, 255, 0) 50%, #000 50%) 0% 0% / 220%
+      2px no-repeat;
+  color: #000;
+  cursor: pointer !important;
+  padding: 5px 2px;
+  text-decoration: none !important;
+  transition: all 0.35s ease-in-out;
+}
+
+.Header h1 a:hover,
+.Header h1 a:focus {
+  background-position: 0 98%, 100% 0;
+  color: #000;
+  outline: none;
+  transition: all 0.35s ease-in-out;
+}
+
+.dark-mode .Header h1 a {
+  background: linear-gradient(to left, rgba(255, 255, 255, 0) 50%, #fff 50%)
+      100% 98% / 220% 2px no-repeat,
+    linear-gradient(to right, rgba(255, 255, 255, 0) 50%, #fff 50%) 0% 0% / 220%
+      2px no-repeat;
+  color: #fff;
+}
+
+.dark-mode .Header h1 a:hover,
+.dark-mode .Header h1 a:focus {
+  background-position: 0 98%, 100% 0;
+  color: #fff;
+  outline: none;
+  transition: all 0.35s ease-in-out;
+}
