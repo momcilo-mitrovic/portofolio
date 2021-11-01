@@ -1,6 +1,6 @@
 import './Footer.css'
 import useDarkMode from 'use-dark-mode'
-import Toggle from '../Toggle/Toggle'
+import Toggle from '../../components/Toggle/Toggle'
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
 import IconGithubSVG from './IconGithub.js'
 import IconLinkedInSVG from './IconLinkedIn'
@@ -9,10 +9,7 @@ function Footer() {
   const darkMode = useDarkMode(false)
 
   return (
-    <div
-      className="Footer
-  "
-    >
+    <div className="Footer">
       <div className="container">
         <footer className="Footer-footer">
           <p>
