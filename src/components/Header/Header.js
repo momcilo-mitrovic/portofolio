@@ -2,7 +2,7 @@ import './Header.css'
 import useDarkMode from 'use-dark-mode'
 import Toggle from '../../components/Toggle/Toggle'
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
-import IconGithubSVG from './IconGithub'
+import IconGithubSVG from './IconGithub.js'
 import IconLinkedInSVG from './IconLinkedIn'
 
 function Header() {
