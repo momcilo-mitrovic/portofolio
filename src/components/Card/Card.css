@@ -10,6 +10,7 @@
 .languages {
   background: white;
   position: relative;
+  padding-bottom: 100px;
 }
 
 .languages .card {
