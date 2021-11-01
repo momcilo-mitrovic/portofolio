@@ -3,7 +3,7 @@
   border-bottom: black 2px solid;
   position: sticky;
   top: 0;
-  z-index: 400;
+  z-index: 500;
 }
 
 .Header-header {
@@ -51,8 +51,10 @@
 }
 
 .Header h1 a {
-  background: linear-gradient(to left, rgba(255, 255, 255, 0) 50%, #000 50%) 100% 98% / 220% 2px no-repeat,
-    linear-gradient(to right, rgba(255, 255, 255, 0) 50%, #000 50%) 0% 0% / 220% 2px no-repeat;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0) 50%, #000 50%)
+      100% 98% / 220% 2px no-repeat,
+    linear-gradient(to right, rgba(255, 255, 255, 0) 50%, #000 50%) 0% 0% / 220%
+      2px no-repeat;
   color: #000;
   cursor: pointer !important;
   padding: 5px 2px;
@@ -69,8 +71,10 @@
 }
 
 .dark-mode .Header h1 a {
-  background: linear-gradient(to left, rgba(255, 255, 255, 0) 50%, #fff 50%) 100% 98% / 220% 2px no-repeat,
-    linear-gradient(to right, rgba(255, 255, 255, 0) 50%, #fff 50%) 0% 0% / 220% 2px no-repeat;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0) 50%, #fff 50%)
+      100% 98% / 220% 2px no-repeat,
+    linear-gradient(to right, rgba(255, 255, 255, 0) 50%, #fff 50%) 0% 0% / 220%
+      2px no-repeat;
   color: #fff;
 }
 
@@ -107,7 +111,7 @@
   width: 5px;
   height: 5px;
   background: transparent;
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
@@ -122,7 +126,7 @@
   width: 5px;
   height: 5px;
   background: transparent;
-  content: '';
+  content: "";
   position: absolute;
   right: 0;
   bottom: 0;
@@ -137,7 +141,7 @@
   width: 5px;
   height: 5px;
   background: transparent;
-  content: '';
+  content: "";
   position: absolute;
   right: 0;
   top: 0;
@@ -153,7 +157,7 @@
   width: 5px;
   height: 5px;
   background: transparent;
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: 0;
@@ -211,7 +215,7 @@ dark-mode .Header-header nav ul li a {
   width: 5px;
   height: 5px;
   background: transparent;
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
@@ -226,7 +230,7 @@ dark-mode .Header-header nav ul li a {
   width: 5px;
   height: 5px;
   background: transparent;
-  content: '';
+  content: "";
   position: absolute;
   right: 0;
   bottom: 0;
@@ -241,7 +245,7 @@ dark-mode .Header-header nav ul li a {
   width: 5px;
   height: 5px;
   background: transparent;
-  content: '';
+  content: "";
   position: absolute;
   right: 0;
   top: 0;
@@ -257,7 +261,7 @@ dark-mode .Header-header nav ul li a {
   width: 5px;
   height: 5px;
   background: transparent;
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: 0;
@@ -298,8 +302,8 @@ dark-mode .Header-header nav ul li a {
 }
 
 .social-links svg {
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
 }
 
 .dark-mode .social-links svg {
