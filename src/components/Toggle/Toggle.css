@@ -39,6 +39,9 @@ input[type="checkbox"].dmcheck + label {
 
 .toggle-container {
   display: flex;
+  position: absolute;
+  top: 30px;
+  right: 20px;
 }
 
 .dark-mode .toggle-container svg {

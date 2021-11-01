@@ -21,6 +21,10 @@
   justify-content: space-around;
 }
 
+.Header-header nav ul li {
+  display: flex;
+}
+
 .Header-header h1 {
   color: var(--color-charcoal);
 }
@@ -291,4 +295,17 @@ dark-mode .Header-header nav ul li a {
   opacity: 1;
   right: 5px;
   bottom: 5px;
+}
+
+.social-links a {
+  margin: 0 1rem;
+}
+
+.social-links svg {
+  width: 25px;
+  height: 25px;
+}
+
+.dark-mode .social-links svg {
+  fill: white;
 }
