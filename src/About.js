@@ -5,17 +5,19 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
 function About() {
   return (
     <div className="About">
-      <div className="About-header">
-        <h1> Something about myself </h1>
-        <p>
-          Hello, my name is Momcilo Mitrovic and I’m a self-taught web designer full stack developer. I enjoy creating
-          cool designs, writing code and finding simple solutions to problems. I reside in Serbia, Belgrade and i am 17
-          years old.
-        </p>
+      <div className="About-header-container">
+        <div className="container About-header">
+          <h1> Something about myself </h1>
+          <p>
+            Hello, my name is Momcilo Mitrovic and I’m a self-taught web designer full stack developer. I enjoy creating
+            cool designs, writing code and finding simple solutions to problems. I reside in Serbia, Belgrade and i am
+            17 years old.
+          </p>
+        </div>
       </div>
 
       <div className="container">
-        <h1> My Skills </h1>
+        <h2> My Skills </h2>
         <p>
           My main skills and service offerings are Design Systems, Full stack development and you can read more about
           that on my Services page. I am also skilled in these other areas: Graphic design, photo editing, interface
@@ -23,13 +25,13 @@ function About() {
           am good at Windows environments.
         </p>
 
-        <h1> Technologies </h1>
-        <p>I like and use technologies like SASS, Node.js, React.js, Webpack, Git and a lot more.</p>
+        <h2> Technologies </h2>
+        <p>I like and use technologies like SASS, Node.js, React.js, Git and a lot more.</p>
 
-        <h1> My tech stack</h1>
+        <h2> My tech stack</h2>
         <p> The tools i use for personal work:</p>
 
-        <p> Coding </p>
+        <h3> Coding </h3>
         <ul>
           <li> My primary code editor is Visual Studio Code. I use the Everset theme. </li>
           <li> I use React as my primary library for building user interfaces. </li>
@@ -50,7 +52,7 @@ function About() {
           </li>
         </ul>
 
-        <p> Tools i use for design </p>
+        <h3> Tools i use for design </h3>
 
         <ul>
           <li>Figma for designing user interfaces</li>

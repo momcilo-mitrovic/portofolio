@@ -2,6 +2,7 @@
   background: rgba(255, 255, 255, 0.8);
   border-bottom: black 2px solid;
   z-index: 400;
+  margin-top: 50px;
 }
 
 .Footer-footer {
