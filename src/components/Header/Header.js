@@ -1,12 +1,12 @@
-import "./Header.css";
-import useDarkMode from "use-dark-mode";
-import Toggle from "../../components/Toggle/Toggle";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import IconGithubSVG from "./IconGithub.js";
-import IconLinkedInSVG from "./IconLinkedIn";
+import './Header.css'
+import useDarkMode from 'use-dark-mode'
+import Toggle from '../../components/Toggle/Toggle'
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
+import IconGithubSVG from './IconGithub.js'
+import IconLinkedInSVG from './IconLinkedIn'
 
 function Header() {
-  const darkMode = useDarkMode(false);
+  const darkMode = useDarkMode(false)
 
   return (
     <div className="Header">
@@ -24,7 +24,7 @@ function Header() {
                 <Link to="/about">About</Link>
               </li>
               <li>
-                <a href="#">Services</a>
+                <a href="/services">Services</a>
               </li>
               <li>
                 <a href="#">Contact</a>
@@ -32,10 +32,7 @@ function Header() {
             </ul>
           </nav>
           <div className="social-links">
-            <a
-              target="_blank"
-              href="https://www.linkedin.com/in/momcilo-mitrovic-548849224/"
-            >
+            <a target="_blank" href="https://www.linkedin.com/in/momcilo-mitrovic-548849224/">
               <span>
                 <IconLinkedInSVG />
               </span>
@@ -50,7 +47,7 @@ function Header() {
       </div>
       <Toggle checked={darkMode.value} onChange={darkMode.toggle} />
     </div>
-  );
+  )
 }
 
-export default Header;
+export default Header

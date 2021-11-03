@@ -2,8 +2,9 @@ import './App.css'
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
-import Home from './Home'
-import About from './About'
+import Home from './pages/Home/Home'
+import About from './pages/About/About'
+import Services from './pages/Services/Services'
 
 function App() {
   return (
@@ -15,6 +16,9 @@ function App() {
         </Route>
         <Route path="/about">
           <About />
+        </Route>
+        <Route path="/services">
+          <Services />
         </Route>
       </Switch>
       <Footer />
