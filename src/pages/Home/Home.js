@@ -11,6 +11,12 @@ function Home() {
       <Hero />
       <Title />
       <Card />
+
+      {/*
+
+      <ServiceOfferings />
+
+    */}
     </div>
   );
 }
