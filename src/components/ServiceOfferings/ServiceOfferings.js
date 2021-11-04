@@ -27,10 +27,10 @@ function ServiceOfferings() {
         </Card>
         <Card>
           <IconApps />
-          <h3> App Development </h3>
+          <h3>Single-page Apps</h3>
           <p>
-            With more than 10 years of WordPress experience I can show you what
-            works and what does not.
+            Modern React apps that are super fast and setup with no
+            configuration.
           </p>
         </Card>
       </div>
