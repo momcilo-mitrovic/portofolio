@@ -1,23 +1,33 @@
 import './Services.css'
-import Header from '../../components/Header/Header'
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
+import Card from '../../components/Card/Card'
+import IconDev from '../../components/Card/IconDev'
+import IconDesign from '../../components/Card/IconDesign'
+import IconApps from '../../components/Card/IconApps'
 
 function Services() {
   return (
     <div className="Services">
       <div className="Services-header-container">
         <div className="container Services-header">
-          <h1> Something about myself </h1>
-          <p>
-            Hello, my name is Momcilo Mitrovic and I’m a self-taught web designer full stack developer. I enjoy creating
-            cool designs, writing code and finding simple solutions to problems. I reside in Serbia, Belgrade and i am
-            17 years old.
-          </p>
+          <h1> Services </h1>
         </div>
       </div>
-
-      <div className="container">
-        <p>Services</p>
+      <div className="container flex">
+        <Card>
+          <IconDesign />
+          <h3>Web Design</h3>
+          <p>Colors, fonts, typography, components... all in one place, documented and easy to access.</p>
+        </Card>
+        <Card>
+          <IconDev />
+          <h3> Full Stack Development </h3>
+          <p>Cutting-edge and mobile responsive HTML5, CSS and React applications. I've got you covered.</p>
+        </Card>
+        <Card>
+          <IconApps />
+          <h3> Single-page Apps </h3>
+          <p> Modern React apps that are super fast and setup with no configuration.</p>
+        </Card>
       </div>
     </div>
   )

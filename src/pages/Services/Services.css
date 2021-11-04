@@ -20,3 +20,11 @@
 .dark-mode .Services-header-container {
   background: rgb(3, 3, 3);
 }
+
+.Services .Card {
+  box-shadow: none;
+}
+
+.Services .Card:hover {
+  transform: none;
+}
