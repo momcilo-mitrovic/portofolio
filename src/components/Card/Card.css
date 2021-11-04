@@ -1,67 +1,39 @@
-.card {
+.Card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #fff;
   border-radius: 10px;
   color: #333;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
   padding: 20px;
   margin: 10px;
-}
-
-.languages {
-  background: white;
-  position: relative;
-  padding-bottom: 100px;
-}
-
-.languages .card {
-  text-align: center;
-  margin: 18px 10px 40px;
   transition: transform 0.2s ease-in;
 }
 
-.languages .card h1 {
-  font-size: 35px;
-  padding: 15px 0;
-}
-
-.languages .card h4 {
-  font-size: 20px;
-  margin-bottom: 10px;
-  font-weight: 400;
-}
-
-.languages .card:hover {
+.Card:hover {
   transform: translateY(-15px);
 }
 
-.flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.Card svg {
+  width: 100px;
+  height: 100px;
 }
 
-.dark-mode .card {
-  background-color: #080808;
-  z-index: 400;
+.Card h3 {
+  font-size: 35px;
 }
 
-.dark-mode .languages {
-  background-color: #1e1e1e;
+.dark-mode .Card {
+  background-color: #000;
 }
 
-.card svg {
-  width: 125px;
-  height: 125px;
+.dark-mode .Card h3,
+.dark-mode .Card p {
+  color: #fff;
 }
 
-.dark-mode .card svg {
-  fill: white;
-}
-
-.dark-mode .card h4 {
-  color: white;
-}
-
-.dark-mode .card h1 {
-  color: white;
+.dark-mode svg {
+  fill: #fff;
 }
