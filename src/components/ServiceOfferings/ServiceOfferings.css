@@ -1,4 +1,4 @@
-.Title {
+.ServiceOfferings {
   font-size: 50px;
   margin: 0;
   padding: 4rem 0 3rem 0;
@@ -7,7 +7,7 @@
   position: relative;
 }
 
-.dark-mode .Title {
+.dark-mode .ServiceOfferings {
   color: #fff;
   background: #1e1e1e;
   z-index: 400;
