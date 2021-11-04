@@ -1,8 +1,7 @@
-import './Home.css'
-import ServiceOfferings from '../../components/ServiceOfferings/ServiceOfferings'
-import Header from '../../components/Header/Header'
-import Hero from '../../components/Hero/Hero'
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
+import "./Home.css";
+import Hero from "../../components/Hero/Hero";
+import ServiceOfferings from "../../components/ServiceOfferings/ServiceOfferings";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -10,7 +9,7 @@ function Home() {
       <Hero />
       <ServiceOfferings />
     </div>
-  )
+  );
 }
 
-export default Home
+export default Home;

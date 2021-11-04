@@ -7,6 +7,11 @@
   position: relative;
 }
 
+.ServiceOfferings h2 {
+  font-size: 55px;
+  margin-bottom: 30px;
+}
+
 .dark-mode .ServiceOfferings {
   color: #fff;
   background: #1e1e1e;
