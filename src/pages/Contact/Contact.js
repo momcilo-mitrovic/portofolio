@@ -1,9 +1,10 @@
 import './Contact.css'
+import Form from '../../components/Form/Form'
 
 function Contact() {
   return (
     <div className="Contact">
-      <div className="Contact-header-container"></div>
+      <Form />
     </div>
   )
 }
