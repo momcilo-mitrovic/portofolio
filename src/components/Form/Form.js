@@ -1,24 +1,40 @@
-import React from 'react'
-import { useForm } from 'react-hook-form'
-import * as emailjs from 'emailjs-com'
+import React, { useRef } from "react";
+import { useForm } from "react-hook-form";
+import emailjs from "emailjs-com";
 
 function Form() {
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm()
-  const onSubmit = (data) => console.log(data)
-  console.log(errors)
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_ilxby1c",
+        "template_zzu0tv8",
+        form.current,
+        "user_S0TMnhXi9IKSH4otWECuh"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
-      <input type="text" placeholder="Name" {...register('Name', { required: true, maxLength: 80 })} />
-      <input type="text" placeholder="Message" {...register('Message', {})} />
-      <input type="email" placeholder="Email" {...register('Email', {})} />
-
-      <input type="submit" />
+    <form ref={form} onSubmit={sendEmail}>
+      <label>Name</label>
+      <input type="text" name="user_name" />
+      <label>Email</label>
+      <input type="email" name="user_email" />
+      <label>Message</label>
+      <textarea name="message" />
+      <input type="submit" value="Send" />
     </form>
-  )
+  );
 }
-export default Form /* I installed react-hook-form */
+export default Form; /* I installed react-hook-form */
