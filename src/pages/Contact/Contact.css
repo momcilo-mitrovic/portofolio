@@ -1,0 +1,13 @@
+.Contact-header-container {
+  background: rgb(241, 241, 241);
+  margin-bottom: 20px;
+}
+
+.Contact-header {
+  padding: 40px;
+}
+
+.Contact-header h1 {
+  font-size: 35px;
+  font-weight: 700;
+}
