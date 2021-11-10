@@ -1,23 +1,31 @@
-import './Form.css'
-import React, { useRef } from 'react'
+// import "./Form.css";
+import "./Form.scss";
+import React, { useRef } from "react";
 // import { useForm } from "react-hook-form";
-import emailjs from 'emailjs-com'
+import emailjs from "emailjs-com";
 
 function Form() {
-  const form = useRef()
+  const form = useRef();
 
   const sendEmail = (e) => {
-    e.preventDefault()
+    e.preventDefault();
 
-    emailjs.sendForm('service_ilxby1c', 'template_zzu0tv8', form.current, 'user_S0TMnhXi9IKSH4otWECuh').then(
-      (result) => {
-        console.log(result.text)
-      },
-      (error) => {
-        console.log(error.text)
-      },
-    )
-  }
+    emailjs
+      .sendForm(
+        "service_ilxby1c",
+        "template_zzu0tv8",
+        form.current,
+        "user_S0TMnhXi9IKSH4otWECuh"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
 
   return (
     <div className="Form">
@@ -37,6 +45,6 @@ function Form() {
         <input type="submit" value="Send" />
       </form>
     </div>
-  )
+  );
 }
-export default Form /* I installed react-hook-form */
+export default Form; /* I installed react-hook-form */
