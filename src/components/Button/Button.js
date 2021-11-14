@@ -1,12 +1,12 @@
-import './Button.css'
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
+import "./Button.scss";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
-function Button() {
+function Button(props) {
   return (
-    <div className="button">
-      <Link to="/about"></Link>
+    <div className="Button">
+      <Link to={props.link}>{props.children}</Link>
     </div>
-  )
+  );
 }
 
-export default Button
+export default Button;

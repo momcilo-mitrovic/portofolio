@@ -1,0 +1,17 @@
+.Button {
+  display: flex;
+
+  a {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 200px;
+    height: auto;
+    min-height: 50px;
+    color: #000;
+    background: #fff;
+    text-decoration: none;
+    margin: 0 0.5rem;
+  }
+}
