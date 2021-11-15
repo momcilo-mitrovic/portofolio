@@ -1,5 +1,5 @@
-import './Hero.css'
-import Button from '../../components/Button/Button'
+import "./Hero.css";
+import Button from "../../components/Button/Button";
 
 function Hero() {
   return (
@@ -11,7 +11,7 @@ function Hero() {
         <Button link="/contact">Contact me</Button>
       </div>
     </div>
-  )
+  );
 }
 
-export default Hero
+export default Hero;
