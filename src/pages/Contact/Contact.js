@@ -1,5 +1,5 @@
-import "./Contact.css";
-import Form from "../../components/Form/Form";
+import './Contact.scss'
+import Form from '../../components/Form/Form'
 
 function Contact() {
   return (
@@ -13,7 +13,7 @@ function Contact() {
         <Form />
       </div>
     </div>
-  );
+  )
 }
 
-export default Contact;
+export default Contact

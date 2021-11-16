@@ -1,0 +1,19 @@
+.Hero {
+  min-height: 800px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Hero h1 {
+  font-size: 55px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  color: white;
+}
+
+.Hero h2 {
+  color: white;
+}

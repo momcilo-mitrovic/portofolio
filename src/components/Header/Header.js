@@ -1,4 +1,4 @@
-import './Header.css'
+import './Header.scss'
 import useDarkMode from 'use-dark-mode'
 import Toggle from '../../components/Toggle/Toggle'
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'

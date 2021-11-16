@@ -1,4 +1,4 @@
-import './Home.css'
+import './Home.scss'
 import Hero from '../../components/Hero/Hero'
 import ServiceOfferings from '../../components/ServiceOfferings/ServiceOfferings'
 

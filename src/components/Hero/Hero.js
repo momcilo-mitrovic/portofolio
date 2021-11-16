@@ -1,4 +1,4 @@
-import './Hero.css'
+import './Hero.scss'
 import Button from '../../components/Button/Button'
 
 function Hero() {

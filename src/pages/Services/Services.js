@@ -1,4 +1,4 @@
-import './Services.css'
+import './Services.scss'
 import Card from '../../components/Card/Card'
 import IconDev from '../../components/Card/IconDev'
 import IconDesign from '../../components/Card/IconDesign'
