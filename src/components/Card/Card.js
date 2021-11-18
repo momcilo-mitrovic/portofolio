@@ -1,7 +1,7 @@
-import "./Card.css";
+import './Card.scss'
 
 function Card(props) {
-  return <section className="Card">{props.children}</section>;
+  return <section className="Card">{props.children}</section>
 }
 
-export default Card;
+export default Card

@@ -1,0 +1,30 @@
+.Services-header-container {
+  background: rgb(241, 241, 241);
+  margin-bottom: 20px;
+}
+
+.Services-header {
+  padding: 40px;
+
+  h1 {
+    font-size: 35px;
+    font-weight: 700;
+  }
+
+  p {
+    font-size: 25px;
+    margin-top: 10px;
+  }
+}
+
+.dark-mode .Services-header-container {
+  background: rgb(3, 3, 3);
+}
+
+.Services .Card {
+  box-shadow: none;
+
+  &:hover {
+    transform: none;
+  }
+}

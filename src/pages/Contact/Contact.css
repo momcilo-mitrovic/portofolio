@@ -15,3 +15,7 @@
 .dark-mode .Contact-header-container {
   background: rgb(3, 3, 3);
 }
+
+.dark-mode .Contact-header h1 {
+  color: white;
+}

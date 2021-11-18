@@ -1,7 +1,7 @@
-import "./Services.css";
+import "./Services.scss";
 import Card from "../../components/Card/Card";
-import IconDesign from "../../components/Card/IconDesign";
 import IconDev from "../../components/Card/IconDev";
+import IconDesign from "../../components/Card/IconDesign";
 import IconApps from "../../components/Card/IconApps";
 
 function Services() {
@@ -9,7 +9,7 @@ function Services() {
     <div className="Services">
       <div className="Services-header-container">
         <div className="container Services-header">
-          <h1>Services</h1>
+          <h1> Services </h1>
         </div>
       </div>
       <div className="container flex">
@@ -31,8 +31,9 @@ function Services() {
         </Card>
         <Card>
           <IconApps />
-          <h3>Single-page Apps</h3>
+          <h3> Single-page Apps </h3>
           <p>
+            {" "}
             Modern React apps that are super fast and setup with no
             configuration.
           </p>

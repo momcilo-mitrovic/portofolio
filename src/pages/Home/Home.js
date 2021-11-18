@@ -1,6 +1,6 @@
-import "./Home.css";
-import Hero from "../../components/Hero/Hero";
-import ServiceOfferings from "../../components/ServiceOfferings/ServiceOfferings";
+import './Home.scss'
+import Hero from '../../components/Hero/Hero'
+import ServiceOfferings from '../../components/ServiceOfferings/ServiceOfferings'
 
 function Home() {
   return (
@@ -8,7 +8,7 @@ function Home() {
       <Hero />
       <ServiceOfferings />
     </div>
-  );
+  )
 }
 
-export default Home;
+export default Home
