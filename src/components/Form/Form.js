@@ -6,7 +6,6 @@ import emailjs from 'emailjs-com'
 function Form() {
   const [mailSent, setMailSent] = useState(false)
   const [isLoading, setLoading] = useState(false)
-
   const {
     register,
     handleSubmit,
@@ -59,7 +58,7 @@ function Form() {
       )}
       {mailSent && (
         <div>
-          <h2>Message sent</h2>
+          <h3>Message sent</h3>
         </div>
       )}
     </div>
