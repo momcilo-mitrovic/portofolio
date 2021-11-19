@@ -3,85 +3,88 @@
   border-bottom: black 2px solid;
   z-index: 400;
   margin-top: 50px;
-}
 
-.Footer-footer {
-  display: flex;
-  align-items: center;
-  min-height: 82px;
-  justify-content: space-between;
-  padding: 0;
-  margin: 0;
+  .Footer-footer {
+    display: flex;
+    align-items: center;
+    min-height: 82px;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+  }
 
-  nav ul {
+  .Footer-footer nav ul {
     display: flex;
     min-width: 500px;
     justify-content: space-around;
-
-    li {
-      display: flex;
-    }
   }
 
-  h1 {
+  .Footer-footer nav ul li {
+    display: flex;
+  }
+
+  .Footer-footer h1 {
     color: var(--color-charcoal);
-
-    a:hover {
-      text-decoration: none;
-    }
   }
 
-  nav {
+  .Footer-footer h1 a:hover {
+    text-decoration: none;
+  }
+
+  .Footer-footer nav {
     text-transform: uppercase;
     font-size: 20px;
   }
-}
 
-.dark-mode {
-  .Footer {
+  .dark-mode .Footer {
     background: rgba(0, 0, 0, 0.8);
   }
 
-  .Footer-footer h1,
-  .Footer a {
+  .dark-mode .Footer-footer h1 {
     color: #fff;
   }
-}
 
-.Footer h1 a {
-  background: linear-gradient(to left, rgba(255, 255, 255, 0) 50%, #000 50%) 100% 98% / 220% 2px no-repeat,
-    linear-gradient(to right, rgba(255, 255, 255, 0) 50%, #000 50%) 0% 0% / 220% 2px no-repeat;
-  color: #000;
-  cursor: pointer !important;
-  padding: 5px 2px;
-  text-decoration: none !important;
-  transition: all 0.35s ease-in-out;
+  .dark-mode .Footer a {
+    color: #fff;
+  }
 
-  &:hover,
-  &:focus {
+  .Footer h1 a {
+    background: linear-gradient(to left, rgba(255, 255, 255, 0) 50%, #000 50%)
+        100% 98% / 220% 2px no-repeat,
+      linear-gradient(to right, rgba(255, 255, 255, 0) 50%, #000 50%) 0% 0% /
+        220% 2px no-repeat;
+    color: #000;
+    cursor: pointer !important;
+    padding: 5px 2px;
+    text-decoration: none !important;
+    transition: all 0.35s ease-in-out;
+  }
+
+  .Footer h1 a:hover,
+  .Footer h1 a:focus {
     background-position: 0 98%, 100% 0;
     color: #000;
     outline: none;
     transition: all 0.35s ease-in-out;
   }
-}
 
-.dark-mode .Footer h1 a {
-  background: linear-gradient(to left, rgba(255, 255, 255, 0) 50%, #fff 50%) 100% 98% / 220% 2px no-repeat,
-    linear-gradient(to right, rgba(255, 255, 255, 0) 50%, #fff 50%) 0% 0% / 220% 2px no-repeat;
-  color: #fff;
+  .dark-mode .Footer h1 a {
+    background: linear-gradient(to left, rgba(255, 255, 255, 0) 50%, #fff 50%)
+        100% 98% / 220% 2px no-repeat,
+      linear-gradient(to right, rgba(255, 255, 255, 0) 50%, #fff 50%) 0% 0% /
+        220% 2px no-repeat;
+    color: #fff;
+  }
 
-  &:hover,
-  &:focus {
+  .dark-mode .Footer h1 a:hover,
+  .dark-mode .Footer h1 a:focus {
     background-position: 0 98%, 100% 0;
     color: #fff;
     outline: none;
     transition: all 0.35s ease-in-out;
   }
-}
 
-.Footer-footer nav {
-  ul li a {
+  .Footer-footer nav ul li a {
     position: relative;
     display: inline-block;
     outline: none;
@@ -91,7 +94,7 @@
     letter-spacing: 1px;
   }
 
-  a {
+  .Footer-footer nav a {
     color: #666;
     padding: 10px 20px;
     position: relative;
@@ -100,159 +103,147 @@
     -webkit-transition: 0.3s ease-out;
     -moz-transition: 0.3s ease-out;
     transition: 0.3s ease-out;
-
-    span {
-      &::before {
-        width: 5px;
-        height: 5px;
-        background: transparent;
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 0;
-        border-top: 2px solid black;
-        border-left: 2px solid black;
-        -webkit-transition: 0.3s;
-        -moz-transition: 0.3s;
-        transition: 0.3s;
-        opacity: 0;
-      }
-
-      &::after {
-        width: 5px;
-        height: 5px;
-        background: transparent;
-        content: '';
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        border-right: 2px solid black;
-        border-bottom: 2px solid black;
-        -webkit-transition: 0.3s;
-        -moz-transition: 0.3s;
-        transition: 0.3s;
-        opacity: 0;
-      }
-    }
-
-    &::before {
-      width: 5px;
-      height: 5px;
-      background: transparent;
-      content: '';
-      position: absolute;
-      right: 0;
-      top: 0;
-      border-right: 2px solid black;
-      border-top: 2px solid black;
-      -webkit-transition: 0.3s;
-      -moz-transition: 0.3s;
-      transition: 0.3s;
-      opacity: 0;
-    }
-
-    &::after {
-      width: 5px;
-      height: 5px;
-      background: transparent;
-      content: '';
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      border-left: 2px solid black;
-      border-bottom: 2px solid black;
-      -webkit-transition: 0.3s;
-      -moz-transition: 0.3s;
-      transition: 0.3s;
-      opacity: 0;
-    }
-
-    &:hover {
-      color: black;
-
-      &::before {
-        opacity: 1;
-        right: 5px;
-        top: 5px;
-      }
-
-      &::after {
-        opacity: 1;
-        left: 5px;
-        bottom: 5px;
-      }
-
-      span {
-        &::before {
-          opacity: 1;
-          left: 5px;
-          top: 5px;
-        }
-
-        &::after {
-          opacity: 1;
-          right: 5px;
-          bottom: 5px;
-        }
-      }
-    }
-  }
-}
-
-dark-mode .Footer-footer nav ul li a {
-  position: relative;
-  display: inline-block;
-  outline: none;
-  color: #fff;
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.dark-mode .Footer-footer nav a {
-  &:hover {
-    color: #fff;
   }
 
-  span {
-    &::before {
-      width: 5px;
-      height: 5px;
-      background: transparent;
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 0;
-      border-top: 2px solid #fff;
-      border-left: 2px solid #fff;
-      -webkit-transition: 0.3s;
-      -moz-transition: 0.3s;
-      transition: 0.3s;
-      opacity: 0;
-    }
-
-    &::after {
-      width: 5px;
-      height: 5px;
-      background: transparent;
-      content: '';
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      border-right: 2px solid #fff;
-      border-bottom: 2px solid #fff;
-      -webkit-transition: 0.3s;
-      -moz-transition: 0.3s;
-      transition: 0.3s;
-      opacity: 0;
-    }
-  }
-
-  &::before {
+  .Footer-footer nav a span::before {
     width: 5px;
     height: 5px;
     background: transparent;
-    content: '';
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    transition: 0.3s;
+    opacity: 0;
+  }
+  .Footer-footer nav a span::after {
+    width: 5px;
+    height: 5px;
+    background: transparent;
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    transition: 0.3s;
+    opacity: 0;
+  }
+  .Footer-footer nav a::before {
+    width: 5px;
+    height: 5px;
+    background: transparent;
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    transition: 0.3s;
+    opacity: 0;
+  }
+
+  .Footer-footer nav a::after {
+    width: 5px;
+    height: 5px;
+    background: transparent;
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    transition: 0.3s;
+    opacity: 0;
+  }
+
+  .Footer-footer nav a:hover {
+    color: black;
+  }
+
+  .Footer-footer nav a:hover::before {
+    opacity: 1;
+    right: 5px;
+    top: 5px;
+  }
+
+  .Footer-footer nav a:hover::after {
+    opacity: 1;
+    left: 5px;
+    bottom: 5px;
+  }
+
+  .Footer-footer nav a:hover span::before {
+    opacity: 1;
+    left: 5px;
+    top: 5px;
+  }
+
+  .Footer-footer nav a:hover span::after {
+    opacity: 1;
+    right: 5px;
+    bottom: 5px;
+  }
+
+  dark-mode .Footer-footer nav ul li a {
+    position: relative;
+    display: inline-block;
+    outline: none;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .dark-mode .Footer-footer nav a:hover {
+    color: #fff;
+  }
+
+  .dark-mode .Footer-footer nav a span::before {
+    width: 5px;
+    height: 5px;
+    background: transparent;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    transition: 0.3s;
+    opacity: 0;
+  }
+  .dark-mode .Footer-footer nav a span::after {
+    width: 5px;
+    height: 5px;
+    background: transparent;
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    transition: 0.3s;
+    opacity: 0;
+  }
+  .dark-mode .Footer-footer nav a::before {
+    width: 5px;
+    height: 5px;
+    background: transparent;
+    content: "";
     position: absolute;
     right: 0;
     top: 0;
@@ -264,11 +255,11 @@ dark-mode .Footer-footer nav ul li a {
     opacity: 0;
   }
 
-  &::after {
+  .dark-mode .Footer-footer nav a::after {
     width: 5px;
     height: 5px;
     background: transparent;
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     bottom: 0;
@@ -280,69 +271,54 @@ dark-mode .Footer-footer nav ul li a {
     opacity: 0;
   }
 
-  &:hover {
-    &::before {
-      opacity: 1;
-      right: 5px;
-      top: 5px;
-    }
-
-    &::after {
-      opacity: 1;
-      left: 5px;
-      bottom: 5px;
-    }
-
-    span {
-      &::before {
-        opacity: 1;
-        left: 5px;
-        top: 5px;
-      }
-
-      &::after {
-        opacity: 1;
-        right: 5px;
-        bottom: 5px;
-      }
-    }
-  }
-}
-
-.social-links {
-  a {
-    margin: 0 1rem;
+  .dark-mode .Footer-footer nav a:hover::before {
+    opacity: 1;
+    right: 5px;
+    top: 5px;
   }
 
-  svg {
+  .dark-mode .Footer-footer nav a:hover::after {
+    opacity: 1;
+    left: 5px;
+    bottom: 5px;
+  }
+
+  .dark-mode .Footer-footer nav a:hover span::before {
+    opacity: 1;
+    left: 5px;
+    top: 5px;
+  }
+
+  .dark-mode .Footer-footer nav a:hover span::after {
+    opacity: 1;
+    right: 5px;
+    bottom: 5px;
+  }
+
+  .social-links a {
+    margin: 0 0.5rem;
+  }
+
+  .social-links svg {
     width: 30px;
     height: 30px;
   }
-}
 
-.dark-mode .social-links svg {
-  fill: white;
-}
+  .dark-mode .social-links svg {
+    fill: white;
+  }
 
-.Footer-footer p {
-  span {
+  .Footer-footer p span {
     margin-right: 5px;
     color: black;
   }
 
-  a {
+  .Footer-footer p a {
     color: black;
     text-decoration: none;
   }
-}
 
-.dark-mode .Footer-footer p span {
-  color: white;
-}
-
-@media (max-width: 1280px) {
-  .social-links svg {
-    width: 30px;
-    height: 30px;
+  .dark-mode .Footer-footer p span {
+    color: white;
   }
 }
