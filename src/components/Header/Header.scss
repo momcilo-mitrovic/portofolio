@@ -324,3 +324,22 @@ dark-mode .Header-header nav ul li a {
 .dark-mode .social-links svg {
   fill: white;
 }
+
+@media (max-width: 1280px) {
+  .Header-header ul li a {
+    font-size: 18px;
+    letter-spacing: 0.5px;
+  }
+  a {
+    padding-right: 150px;
+  }
+  .social-links svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .social-links h1 {
+    font-size: 25px;
+    padding-left: 100px;
+  }
+}

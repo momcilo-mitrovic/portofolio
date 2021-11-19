@@ -339,3 +339,10 @@ dark-mode .Footer-footer nav ul li a {
 .dark-mode .Footer-footer p span {
   color: white;
 }
+
+@media (max-width: 1280px) {
+  .social-links svg {
+    width: 30px;
+    height: 30px;
+  }
+}
