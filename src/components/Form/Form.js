@@ -68,4 +68,4 @@ function Form() {
     </div>
   );
 }
-export default Form; /* I installed react-hook-form */
+export default Form;
