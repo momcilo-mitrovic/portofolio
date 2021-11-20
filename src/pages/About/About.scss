@@ -20,3 +20,18 @@
 .dark-mode .About-header-container {
   background: rgb(3, 3, 3);
 }
+
+@media (min-width: 1280px) {
+  .container h2 {
+    padding-left: 50px;
+  }
+  .container p {
+    padding-left: 60px;
+  }
+  .container h3 {
+    padding-left: 50px;
+  }
+  .container ul {
+    padding-left: 60px;
+  }
+}
