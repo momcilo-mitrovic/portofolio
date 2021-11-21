@@ -1,5 +1,5 @@
 import "./Button.scss";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Link } from "react-router-dom";
 
 function Button(props) {
   return (
