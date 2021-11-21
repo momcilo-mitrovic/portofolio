@@ -13,15 +13,15 @@ function Header() {
       <div className="container">
         <header className="Header-header">
           <h1>
-            <Link to="/">Momcilo Mitrovic</Link>
+            <a href="/">Momcilo Mitrovic</a>
           </h1>
           <nav>
             <ul>
               <li>
-                <Link to="/">Home</Link>
+                <a href="/">Home</a>
               </li>
               <li>
-                <Link to="/about">About</Link>
+                <a href="/about">About</a>
               </li>
               <li>
                 <a href="/services">Services</a>
