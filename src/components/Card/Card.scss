@@ -1,3 +1,11 @@
+.Cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  @media (min-width: 1280px) {
+    flex-wrap: nowrap;
+  }
+}
+
 .Card {
   display: flex;
   flex-direction: column;

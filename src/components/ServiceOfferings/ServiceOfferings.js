@@ -8,7 +8,7 @@ function ServiceOfferings() {
   return (
     <div className="ServiceOfferings">
       <h2>What I can Offer</h2>
-      <div className="container flex">
+      <div className="Cards-container">
         <Card>
           <IconDesign />
           <h3>Web Design</h3>
