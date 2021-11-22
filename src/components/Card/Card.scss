@@ -3,6 +3,8 @@
   flex-wrap: wrap;
   @media (min-width: 1280px) {
     flex-wrap: nowrap;
+    max-width: 1280px;
+    margin: 0 auto;
   }
 }
 

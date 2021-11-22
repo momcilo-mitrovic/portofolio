@@ -38,7 +38,6 @@
         text-decoration: none;
         text-transform: uppercase;
         letter-spacing: 1px;
-        color: #666;
         padding: 10px 20px;
         position: relative;
         overflow: hidden;
@@ -51,7 +50,7 @@
           width: 5px;
           height: 5px;
           background: transparent;
-          content: "";
+          content: '';
           position: absolute;
           left: 0;
           top: 0;
@@ -66,7 +65,7 @@
           width: 5px;
           height: 5px;
           background: transparent;
-          content: "";
+          content: '';
           position: absolute;
           right: 0;
           bottom: 0;
@@ -82,7 +81,7 @@
           width: 5px;
           height: 5px;
           background: transparent;
-          content: "";
+          content: '';
           position: absolute;
           right: 0;
           top: 0;
@@ -98,7 +97,7 @@
           width: 5px;
           height: 5px;
           background: transparent;
-          content: "";
+          content: '';
           position: absolute;
           left: 0;
           bottom: 0;
@@ -149,10 +148,8 @@
   .Header-header h1 {
     color: var(--color-charcoal);
     a {
-      background: linear-gradient(to left, rgba(255, 255, 255, 0) 50%, #000 50%)
-          100% 98% / 220% 2px no-repeat,
-        linear-gradient(to right, rgba(255, 255, 255, 0) 50%, #000 50%) 0% 0% /
-          220% 2px no-repeat;
+      background: linear-gradient(to left, rgba(255, 255, 255, 0) 50%, #000 50%) 100% 98% / 220% 2px no-repeat,
+        linear-gradient(to right, rgba(255, 255, 255, 0) 50%, #000 50%) 0% 0% / 220% 2px no-repeat;
       color: #000;
       cursor: pointer !important;
       padding: 5px 2px;
@@ -177,10 +174,8 @@
   }
 
   .Header h1 a {
-    background: linear-gradient(to left, rgba(255, 255, 255, 0) 50%, #000 50%)
-        100% 98% / 220% 2px no-repeat,
-      linear-gradient(to right, rgba(255, 255, 255, 0) 50%, #000 50%) 0% 0% /
-        220% 2px no-repeat;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0) 50%, #000 50%) 100% 98% / 220% 2px no-repeat,
+      linear-gradient(to right, rgba(255, 255, 255, 0) 50%, #000 50%) 0% 0% / 220% 2px no-repeat;
     color: #000;
     cursor: pointer !important;
     padding: 5px 2px;
@@ -197,10 +192,8 @@
   }
 
   .dark-mode .Header h1 a {
-    background: linear-gradient(to left, rgba(255, 255, 255, 0) 50%, #fff 50%)
-        100% 98% / 220% 2px no-repeat,
-      linear-gradient(to right, rgba(255, 255, 255, 0) 50%, #fff 50%) 0% 0% /
-        220% 2px no-repeat;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0) 50%, #fff 50%) 100% 98% / 220% 2px no-repeat,
+      linear-gradient(to right, rgba(255, 255, 255, 0) 50%, #fff 50%) 0% 0% / 220% 2px no-repeat;
     color: #fff;
   }
 
@@ -264,7 +257,7 @@
   width: 5px;
   height: 5px;
   background: transparent;
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   top: 0;
@@ -279,7 +272,7 @@
   width: 5px;
   height: 5px;
   background: transparent;
-  content: "";
+  content: '';
   position: absolute;
   right: 0;
   bottom: 0;
@@ -294,7 +287,7 @@
   width: 5px;
   height: 5px;
   background: transparent;
-  content: "";
+  content: '';
   position: absolute;
   right: 0;
   top: 0;
@@ -310,7 +303,7 @@
   width: 5px;
   height: 5px;
   background: transparent;
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   bottom: 0;

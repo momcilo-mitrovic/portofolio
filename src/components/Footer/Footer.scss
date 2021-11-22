@@ -36,6 +36,10 @@
     font-size: 20px;
   }
 
+  .Footer-footer p a {
+    color: black;
+  }
+
   .Footer h1 a {
     background: linear-gradient(to left, rgba(255, 255, 255, 0) 50%, #000 50%) 100% 98% / 220% 2px no-repeat,
       linear-gradient(to right, rgba(255, 255, 255, 0) 50%, #000 50%) 0% 0% / 220% 2px no-repeat;
@@ -180,7 +184,6 @@
   }
 
   .Footer-footer p a {
-    color: black;
     text-decoration: none;
   }
 }
@@ -197,10 +200,6 @@
 }
 
 .dark-mode .Footer-footer h1 {
-  color: #fff;
-}
-
-.dark-mode .Footer a {
   color: #fff;
 }
 
@@ -226,6 +225,9 @@
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 1px;
+}
+.dark-mode .Footer-footer p a {
+  color: #fff;
 }
 
 .dark-mode .Footer-footer nav a:hover {
