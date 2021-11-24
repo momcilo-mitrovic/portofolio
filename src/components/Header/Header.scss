@@ -17,14 +17,13 @@
   // Head-header nav start
 
   .Header-header nav {
-    text-transform: uppercase;
-    font-size: 20px;
     display: none;
-
     ul {
-      display: flex;
-      min-width: 500px;
-      justify-content: space-around;
+      @media (min-width: 1280px) {
+        display: flex;
+        min-width: 500px;
+        justify-content: space-around;
+      }
     }
 
     li {
@@ -50,7 +49,7 @@
           width: 5px;
           height: 5px;
           background: transparent;
-          content: '';
+          content: "";
           position: absolute;
           left: 0;
           top: 0;
@@ -65,7 +64,7 @@
           width: 5px;
           height: 5px;
           background: transparent;
-          content: '';
+          content: "";
           position: absolute;
           right: 0;
           bottom: 0;
@@ -81,7 +80,7 @@
           width: 5px;
           height: 5px;
           background: transparent;
-          content: '';
+          content: "";
           position: absolute;
           right: 0;
           top: 0;
@@ -97,7 +96,7 @@
           width: 5px;
           height: 5px;
           background: transparent;
-          content: '';
+          content: "";
           position: absolute;
           left: 0;
           bottom: 0;
@@ -138,18 +137,16 @@
         }
       }
     }
-
-    @media (min-width: 1280px) {
-      display: flex;
-    }
   }
   // Header-nav end
 
   .Header-header h1 {
     color: var(--color-charcoal);
     a {
-      background: linear-gradient(to left, rgba(255, 255, 255, 0) 50%, #000 50%) 100% 98% / 220% 2px no-repeat,
-        linear-gradient(to right, rgba(255, 255, 255, 0) 50%, #000 50%) 0% 0% / 220% 2px no-repeat;
+      background: linear-gradient(to left, rgba(255, 255, 255, 0) 50%, #000 50%)
+          100% 98% / 220% 2px no-repeat,
+        linear-gradient(to right, rgba(255, 255, 255, 0) 50%, #000 50%) 0% 0% /
+          220% 2px no-repeat;
       color: #000;
       cursor: pointer !important;
       padding: 5px 2px;
@@ -174,8 +171,10 @@
   }
 
   .Header h1 a {
-    background: linear-gradient(to left, rgba(255, 255, 255, 0) 50%, #000 50%) 100% 98% / 220% 2px no-repeat,
-      linear-gradient(to right, rgba(255, 255, 255, 0) 50%, #000 50%) 0% 0% / 220% 2px no-repeat;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0) 50%, #000 50%)
+        100% 98% / 220% 2px no-repeat,
+      linear-gradient(to right, rgba(255, 255, 255, 0) 50%, #000 50%) 0% 0% /
+        220% 2px no-repeat;
     color: #000;
     cursor: pointer !important;
     padding: 5px 2px;
@@ -192,8 +191,10 @@
   }
 
   .dark-mode .Header h1 a {
-    background: linear-gradient(to left, rgba(255, 255, 255, 0) 50%, #fff 50%) 100% 98% / 220% 2px no-repeat,
-      linear-gradient(to right, rgba(255, 255, 255, 0) 50%, #fff 50%) 0% 0% / 220% 2px no-repeat;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0) 50%, #fff 50%)
+        100% 98% / 220% 2px no-repeat,
+      linear-gradient(to right, rgba(255, 255, 255, 0) 50%, #fff 50%) 0% 0% /
+        220% 2px no-repeat;
     color: #fff;
   }
 
@@ -216,6 +217,21 @@
   .social-links svg {
     width: 30px;
     height: 30px;
+  }
+
+  .Header-header nav {
+    @media (min-width: 1280px) {
+      display: flex;
+      text-transform: uppercase;
+      font-size: 20px;
+    }
+  }
+
+  .Header-header nav.menu-mobile {
+    display: flex;
+    @media (min-width: 1280px) {
+      display: none;
+    }
   }
 }
 
@@ -257,7 +273,7 @@
   width: 5px;
   height: 5px;
   background: transparent;
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
@@ -272,7 +288,7 @@
   width: 5px;
   height: 5px;
   background: transparent;
-  content: '';
+  content: "";
   position: absolute;
   right: 0;
   bottom: 0;
@@ -287,7 +303,7 @@
   width: 5px;
   height: 5px;
   background: transparent;
-  content: '';
+  content: "";
   position: absolute;
   right: 0;
   top: 0;
@@ -303,7 +319,7 @@
   width: 5px;
   height: 5px;
   background: transparent;
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: 0;
@@ -358,4 +374,82 @@
   .social-links {
     padding-right: 150px;
   }
+}
+
+// Hamburger menu
+
+.Header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+}
+
+/* menu icon */
+
+.Header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.Header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background 0.2s ease-out;
+  width: 18px;
+}
+
+.Header .menu-icon .navicon:before,
+.Header .menu-icon .navicon:after {
+  background: #333;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+
+.Header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.Header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.Header .menu-btn {
+  display: none;
+}
+
+.Header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.Header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.Header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.Header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.Header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.Header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
 }
