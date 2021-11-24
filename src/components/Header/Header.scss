@@ -10,8 +10,12 @@
     align-items: center;
     min-height: 82px;
     justify-content: space-between;
-    padding: 0;
+    padding: 0 2rem;
     margin: 0;
+
+    @media (min-width: 1280px) {
+      padding: 0;
+    }
   }
 
   // Head-header nav start
@@ -376,16 +380,24 @@
   }
 }
 
+.menu-mobile-container {
+  display: flex;
+  align-items: center;
+}
+
 // Hamburger menu
 
 .Header .menu {
   clear: both;
   max-height: 0;
-  transition: max-height 0.2s ease-out;
   margin: 0;
   padding: 0;
   list-style: none;
   overflow: hidden;
+
+  li {
+    padding: 0.5rem 1.25rem;
+  }
 }
 
 /* menu icon */
@@ -393,14 +405,14 @@
 .Header .menu-icon {
   cursor: pointer;
   display: inline-block;
-  float: right;
-  padding: 28px 20px;
-  position: relative;
+  padding: 0;
   user-select: none;
+  position: absolute;
+  right: 180px;
 }
 
 .Header .menu-icon .navicon {
-  background: #333;
+  background: #fff;
   display: block;
   height: 2px;
   position: relative;
@@ -410,7 +422,7 @@
 
 .Header .menu-icon .navicon:before,
 .Header .menu-icon .navicon:after {
-  background: #333;
+  background: #fff;
   content: "";
   display: block;
   height: 100%;
@@ -434,7 +446,12 @@
 }
 
 .Header .menu-btn:checked ~ .menu {
-  max-height: 240px;
+  max-height: 280px;
+  position: absolute;
+  background: #000;
+  left: 0;
+  top: 75px;
+  width: 100%;
 }
 
 .Header .menu-btn:checked ~ .menu-icon .navicon {
