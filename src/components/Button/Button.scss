@@ -1,6 +1,6 @@
 .Button-wrap {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
   max-width: 100%;
   margin-top: 4rem;
@@ -12,6 +12,7 @@
 }
 
 .Button {
+  margin: 0 0.5rem;
   a {
     font-size: 20px;
     display: flex;

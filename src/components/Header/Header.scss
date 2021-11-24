@@ -17,14 +17,13 @@
   // Head-header nav start
 
   .Header-header nav {
-    text-transform: uppercase;
-    font-size: 20px;
     display: none;
-
     ul {
-      display: flex;
-      min-width: 500px;
-      justify-content: space-around;
+      @media (min-width: 1280px) {
+        display: flex;
+        min-width: 500px;
+        justify-content: space-around;
+      }
     }
 
     li {
@@ -137,10 +136,6 @@
           bottom: 5px;
         }
       }
-    }
-
-    @media (min-width: 1280px) {
-      display: flex;
     }
   }
   // Header-nav end
@@ -357,5 +352,21 @@
 
   .social-links {
     padding-right: 150px;
+  }
+}
+
+.Header-header nav {
+  @media (min-width: 1280px) {
+    display: flex;
+    text-transform: uppercase;
+    font-size: 20px;
+    display: none;
+  }
+}
+
+.Header-header nav .menu-mobile {
+  display: flex;
+  @media (min-width: 1280px) {
+    display: none;
   }
 }
