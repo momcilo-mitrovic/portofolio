@@ -146,6 +146,10 @@
 
   .Header-header h1 {
     color: var(--color-charcoal);
+    font-size: 20px;
+    @media (min-width: 650px) {
+      font-size: 30px;
+    }
     a {
       background: linear-gradient(to left, rgba(255, 255, 255, 0) 50%, #000 50%) 100% 98% / 220% 2px no-repeat,
         linear-gradient(to right, rgba(255, 255, 255, 0) 50%, #000 50%) 0% 0% / 220% 2px no-repeat;
@@ -408,7 +412,7 @@
 }
 
 .Header .menu-icon .navicon {
-  background: #fff;
+  background: black;
   display: block;
   height: 2px;
   position: relative;
@@ -418,7 +422,7 @@
 
 .Header .menu-icon .navicon:before,
 .Header .menu-icon .navicon:after {
-  background: #fff;
+  background: black;
   content: '';
   display: block;
   height: 100%;
@@ -444,7 +448,7 @@
 .Header .menu-btn:checked ~ .menu {
   max-height: 280px;
   position: absolute;
-  background: #000;
+  background: white;
   left: 0;
   top: 75px;
   width: 100%;
