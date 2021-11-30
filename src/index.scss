@@ -60,6 +60,11 @@ p {
 .container {
   max-width: 1280px;
   margin: 0 auto;
+  //padding: 0 20px; // This fucks up my header, but fixes my About page container
+}
+
+.container-about {
+  padding: 0 20px;
 }
 
 .flex {

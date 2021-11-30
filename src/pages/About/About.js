@@ -14,7 +14,7 @@ function About() {
         </div>
       </div>
 
-      <div className="container">
+      <div className="container-about">
         <h2> My Skills </h2>
         <p>
           My main skills and service offerings are Design Systems, Full stack development and you can read more about
