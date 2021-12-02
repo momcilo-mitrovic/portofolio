@@ -3,10 +3,15 @@ import Card from '../../components/Card/Card'
 import IconDev from '../../components/Card/IconDev'
 import IconDesign from '../../components/Card/IconDesign'
 import IconApps from '../../components/Card/IconApps'
+import { Helmet } from 'react-helmet'
 
 function Services() {
   return (
     <div className="Services">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Momcilo Mitrovic Portofolio Services</title>
+      </Helmet>
       <div className="Services-header-container">
         <div className="container Services-header">
           <h1> Services </h1>

@@ -1,8 +1,13 @@
 import './About.scss'
+import { Helmet } from 'react-helmet'
 
 function About() {
   return (
     <div className="About">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Momcilo Mitrovic Portofolio About</title>
+      </Helmet>
       <div className="About-header-container">
         <div className="container About-header">
           <h1> Something about myself </h1>
