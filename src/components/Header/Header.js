@@ -1,7 +1,6 @@
 import './Header.scss'
 import useDarkMode from 'use-dark-mode'
 import Toggle from '../../components/Toggle/Toggle'
-import { BrowserRouter as Link } from 'react-router-dom'
 import IconGithubSVG from './IconGithub.js'
 import IconLinkedInSVG from './IconLinkedIn'
 

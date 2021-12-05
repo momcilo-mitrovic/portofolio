@@ -1,12 +1,11 @@
-import "./Button.scss";
-import { BrowserRouter as Link } from "react-router-dom";
+import './Button.scss'
 
 function Button(props) {
   return (
     <div className="Button">
       <a href={props.link}>{props.children}</a>
     </div>
-  );
+  )
 }
 
-export default Button;
+export default Button
