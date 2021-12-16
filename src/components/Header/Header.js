@@ -31,7 +31,6 @@ function Header() {
               </li>
             </ul>
           </nav>
-
           <div className="menu-mobile-container">
             <nav className="menu-mobile">
               <input className="menu-btn" type="checkbox" id="menu-btn" />
@@ -40,20 +39,19 @@ function Header() {
               </label>
               <ul className="menu">
                 <li>
-                  <a href="#work">Our Work</a>
+                  <a href="/">Home</a>
                 </li>
                 <li>
-                  <a href="#about">About</a>
+                  <a href="/about">About</a>
                 </li>
                 <li>
-                  <a href="#careers">Careers</a>
+                  <a href="/services">Services</a>
                 </li>
                 <li>
-                  <a href="#contact">Contact</a>
+                  <a href="/contact">Contact</a>
                 </li>
               </ul>
             </nav>
-
             <div className="social-links">
               <a
                 target="_blank"

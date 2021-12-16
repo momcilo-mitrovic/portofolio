@@ -146,6 +146,10 @@
 
   .Header-header h1 {
     color: var(--color-charcoal);
+    font-size: 20px;
+    @media (min-width: 650px) {
+      font-size: 30px;
+    }
     a {
       background: linear-gradient(to left, rgba(255, 255, 255, 0) 50%, #000 50%)
           100% 98% / 220% 2px no-repeat,
@@ -387,6 +391,11 @@
 
 // Hamburger menu
 
+.menu-mobile-container {
+  display: flex;
+  align-items: center;
+}
+
 .Header .menu {
   clear: both;
   max-height: 0;
@@ -406,15 +415,16 @@
   cursor: pointer;
   display: inline-block;
   padding: 0;
+  position: relative;
   user-select: none;
   position: absolute;
   right: 180px;
 }
 
 .Header .menu-icon .navicon {
-  background: #fff;
+  background: black;
   display: block;
-  height: 2px;
+  height: 3px;
   position: relative;
   transition: background 0.2s ease-out;
   width: 18px;
@@ -422,7 +432,7 @@
 
 .Header .menu-icon .navicon:before,
 .Header .menu-icon .navicon:after {
-  background: #fff;
+  background: black;
   content: "";
   display: block;
   height: 100%;
@@ -448,7 +458,7 @@
 .Header .menu-btn:checked ~ .menu {
   max-height: 280px;
   position: absolute;
-  background: #000;
+  background: white;
   left: 0;
   top: 75px;
   width: 100%;
