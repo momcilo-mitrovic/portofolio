@@ -9,8 +9,8 @@
     display: flex;
     align-items: center;
     min-height: 82px;
-    justify-content: space-between;
-    padding: 0 2rem;
+    justify-content: flex-start;
+    padding: 0 1rem;
     margin: 0;
 
     @media (min-width: 1280px) {
@@ -147,6 +147,8 @@
   .Header-header h1 {
     color: var(--color-charcoal);
     font-size: 20px;
+    white-space: pre;
+    flex-grow: 1;
     @media (min-width: 650px) {
       font-size: 30px;
     }
@@ -209,7 +211,11 @@
   }
 
   .social-links {
-    display: flex;
+    display: none;
+
+    @media (min-width: 640px) {
+      display: flex;
+    }
   }
 
   .social-links a {
@@ -231,6 +237,7 @@
 
   .Header-header nav.menu-mobile {
     display: flex;
+    width: 0;
     @media (min-width: 1280px) {
       display: none;
     }
@@ -378,6 +385,11 @@
   }
 }
 
+.menu-mobile-container {
+  display: flex;
+  align-items: center;
+}
+
 // Hamburger menu
 
 .menu-mobile-container {
@@ -406,8 +418,8 @@
   padding: 0;
   position: relative;
   user-select: none;
-  position: absolute;
-  right: 180px;
+  margin: 0;
+  left: -3rem;
 }
 
 .Header .menu-icon .navicon {
@@ -468,4 +480,16 @@
 .Header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
 .Header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   top: 0;
+}
+
+.dark-mode .Header .menu-icon .navicon {
+  background: white;
+}
+.dark-mode .Header .menu-icon .navicon:before,
+.dark-mode .Header .menu-icon .navicon:after {
+  background: white;
+}
+
+.dark-mode .Header .menu li {
+  background: black;
 }
