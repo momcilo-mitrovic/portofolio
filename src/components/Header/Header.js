@@ -52,22 +52,22 @@ function Header() {
                 </li>
               </ul>
             </nav>
-            <div className="social-links">
-              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/momcilo-mitrovic-548849224/">
-                <span>
-                  <IconLinkedInSVG />
-                </span>
-              </a>
-              <a target="_blank" rel="noreferrer" href="https://github.com/momcilo-mitrovic">
-                <span>
-                  <IconGithubSVG />
-                </span>
-              </a>
-            </div>
           </div>
+          <div className="social-links">
+            <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/momcilo-mitrovic-548849224/">
+              <span>
+                <IconLinkedInSVG />
+              </span>
+            </a>
+            <a target="_blank" rel="noreferrer" href="https://github.com/momcilo-mitrovic">
+              <span>
+                <IconGithubSVG />
+              </span>
+            </a>
+          </div>
+          <Toggle checked={darkMode.value} onChange={darkMode.toggle} />
         </header>
       </div>
-      <Toggle checked={darkMode.value} onChange={darkMode.toggle} />
     </div>
   )
 }
