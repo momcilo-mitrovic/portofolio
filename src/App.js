@@ -6,9 +6,8 @@ import Home from './pages/Home/Home'
 import About from './pages/About/About'
 import Services from './pages/Services/Services'
 import Contact from './pages/Contact/Contact'
-import Project from './pages/Projects/Projects'
-import { Helmet } from 'react-helmet'
 import Projects from './pages/Projects/Projects'
+import { Helmet } from 'react-helmet'
 
 function App() {
   return (
