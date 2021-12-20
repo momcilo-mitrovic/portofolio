@@ -21,6 +21,21 @@ function requestUserRepos(userName) {
 
     // Log the response
     console.log(data)
+
+    // Loop over each object in data array
+    for (let i in data) {
+      // Log the repo name
+      console.log('Repo:', data[i].name)
+
+      // Log the repo description
+      console.log('Description:', data[i].description)
+
+      // Log the repo url
+      console.log('URL:', data[i].html_url)
+
+      // Add a separator between each repo
+      console.log('=========================')
+    }
   }
 
   // Send the request to the server
@@ -30,7 +45,7 @@ function requestUserRepos(userName) {
 function Projects() {
   return (
     <div className="Projects">
-      {requestUserRepos('facebook')}
+      {requestUserRepos('momcilo-mitrovic')}
 
       <Helmet>
         <meta charSet="utf-8" />
