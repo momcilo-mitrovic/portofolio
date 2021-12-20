@@ -1,0 +1,22 @@
+.Projects-header-container {
+  background: rgb(241, 241, 241);
+  margin-bottom: 20px;
+
+  .Projects-header {
+    padding: 40px;
+  }
+
+  .Projects-header h1 {
+    font-size: 35px;
+    font-weight: 700;
+  }
+
+  .Projects-header p {
+    font-size: 25px;
+    margin-top: 10px;
+  }
+}
+
+.dark-mode .Projects-header-container {
+  background: rgb(3, 3, 3);
+}

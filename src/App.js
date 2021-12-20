@@ -6,6 +6,7 @@ import Home from './pages/Home/Home'
 import About from './pages/About/About'
 import Services from './pages/Services/Services'
 import Contact from './pages/Contact/Contact'
+import Projects from './pages/Projects/Projects'
 import { Helmet } from 'react-helmet'
 
 function App() {
@@ -26,6 +27,9 @@ function App() {
         </Route>
         <Route path="/services">
           <Services />
+        </Route>
+        <Route path="/projects">
+          <Projects />
         </Route>
         <Route path="/contact">
           <Contact />
