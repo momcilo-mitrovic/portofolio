@@ -1,5 +1,4 @@
 import "./Footer.scss";
-import { BrowserRouter as Link } from "react-router-dom";
 import IconGithubSVG from "./IconGithub.js";
 import IconLinkedInSVG from "./IconLinkedIn";
 
