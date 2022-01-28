@@ -61,11 +61,13 @@ function Header() {
           </div>
           <div className="social-links">
             <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/momcilo-mitrovic-548849224/">
+              <span className="Iconlinktext">Linkedin link</span>
               <span>
                 <IconLinkedInSVG />
               </span>
             </a>
             <a target="_blank" rel="noreferrer" href="https://github.com/momcilo-mitrovic">
+              <span className="Iconlinktext">Github link</span>
               <span>
                 <IconGithubSVG />
               </span>
