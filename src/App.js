@@ -1,13 +1,13 @@
-import './App.scss'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import Header from './components/Header/Header'
-import Footer from './components/Footer/Footer'
-import Home from './pages/Home/Home'
-import About from './pages/About/About'
-import Services from './pages/Services/Services'
-import Contact from './pages/Contact/Contact'
-import Projects from './pages/Projects/Projects'
-import { Helmet } from 'react-helmet'
+import "./App.scss";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
+import Home from "./pages/Home/Home";
+import About from "./pages/About/About";
+import Services from "./pages/Services/Services";
+import Contact from "./pages/Contact/Contact";
+import Projects from "./pages/Projects/Projects";
+import { Helmet } from "react-helmet";
 
 function App() {
   return (
@@ -15,7 +15,6 @@ function App() {
       <Helmet>
         <meta charSet="utf-8" />
         <title>Momcilo Mitrovic Portofolio</title>
-        <link rel="canonical" href="http://mysite.com/example" />
       </Helmet>
       <Header />
       <Switch>
@@ -37,7 +36,7 @@ function App() {
       </Switch>
       <Footer />
     </Router>
-  )
+  );
 }
 
-export default App
+export default App;
