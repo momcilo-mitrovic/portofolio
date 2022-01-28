@@ -7,15 +7,10 @@ import About from "./pages/About/About";
 import Services from "./pages/Services/Services";
 import Contact from "./pages/Contact/Contact";
 import Projects from "./pages/Projects/Projects";
-import { Helmet } from "react-helmet";
 
 function App() {
   return (
     <Router>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>Momcilo Mitrovic Portofolio</title>
-      </Helmet>
       <Header />
       <Switch>
         <Route exact path="/">

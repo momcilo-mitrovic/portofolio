@@ -1,11 +1,13 @@
-import './Header.scss'
-import useDarkMode from 'use-dark-mode'
-import Toggle from '../../components/Toggle/Toggle'
-import IconGithubSVG from './IconGithub.js'
-import IconLinkedInSVG from './IconLinkedIn'
+import "./Header.scss";
+import useDarkMode from "use-dark-mode";
+import Toggle from "../../components/Toggle/Toggle";
+import IconGithubSVG from "./IconGithub.js";
+import IconLinkedInSVG from "./IconLinkedIn";
+import IconSunSVG from "./IconSun";
+import IconMoonSVG from "./IconMoon";
 
 function Header() {
-  const darkMode = useDarkMode(false)
+  const darkMode = useDarkMode(false);
 
   return (
     <div className="Header">
@@ -36,7 +38,7 @@ function Header() {
           <div className="menu-mobile-container">
             <nav className="menu-mobile">
               <input className="menu-btn" type="checkbox" id="menu-btn" />
-              <label className="menu-icon" for="menu-btn">
+              <label className="menu-icon" htmlFor="menu-btn">
                 <span className="navicon"></span>
               </label>
               <ul className="menu">
@@ -59,24 +61,49 @@ function Header() {
             </nav>
           </div>
           <div className="social-links">
-            <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/momcilo-mitrovic-548849224/">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.linkedin.com/in/momcilo-mitrovic-548849224/"
+            >
               <span className="Iconlinktext">Linkedin link</span>
               <span>
                 <IconLinkedInSVG />
               </span>
             </a>
-            <a target="_blank" rel="noreferrer" href="https://github.com/momcilo-mitrovic">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://github.com/momcilo-mitrovic"
+            >
               <span className="Iconlinktext">Github link</span>
               <span>
                 <IconGithubSVG />
               </span>
             </a>
           </div>
-          <Toggle checked={darkMode.value} onChange={darkMode.toggle} />
+          {/* <div className="theme-toggle">
+            <button type="button" onClick={darkMode.disable}>
+              ☀
+            </button>
+            <button type="button" onClick={darkMode.enable}>
+              ☾
+            </button>
+          </div> */}
+          <div className="theme-toggle">
+            <IconSunSVG />
+            <div class="theme-toggle-toggler">
+              <input type="checkbox" id="switch" />
+              <label htmlFor="switch" onClick={darkMode.toggle}>
+                Toggle
+              </label>
+            </div>
+            <IconMoonSVG />
+          </div>
         </header>
       </div>
     </div>
-  )
+  );
 }
 
-export default Header
+export default Header;
