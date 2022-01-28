@@ -1,6 +1,5 @@
 import "./Header.scss";
 import useDarkMode from "use-dark-mode";
-import Toggle from "../../components/Toggle/Toggle";
 import IconGithubSVG from "./IconGithub.js";
 import IconLinkedInSVG from "./IconLinkedIn";
 import IconSunSVG from "./IconSun";
