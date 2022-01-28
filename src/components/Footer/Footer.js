@@ -1,6 +1,7 @@
-import './Footer.scss'
-import IconGithubSVG from './IconGithub.js'
-import IconLinkedInSVG from './IconLinkedIn'
+import "./Footer.scss";
+import { BrowserRouter as Link } from "react-router-dom";
+import IconGithubSVG from "./IconGithub.js";
+import IconLinkedInSVG from "./IconLinkedIn";
 
 function Footer() {
   return (
@@ -12,12 +13,22 @@ function Footer() {
             <a href="/">Momcilo Mitrovic</a>
           </p>
           <div className="social-links">
-            <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/momcilo-mitrovic-548849224/">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.linkedin.com/in/momcilo-mitrovic-548849224/"
+            >
+              <span className="Iconlinktext">Linkedin link</span>
               <span>
                 <IconLinkedInSVG />
               </span>
             </a>
-            <a target="_blank" rel="noreferrer" href="https://github.com/momcilo-mitrovic">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://github.com/momcilo-mitrovic"
+            >
+              <span className="Iconlinktext">Github link</span>
               <span>
                 <IconGithubSVG />
               </span>
@@ -26,7 +37,7 @@ function Footer() {
         </footer>
       </div>
     </div>
-  )
+  );
 }
 
-export default Footer
+export default Footer;
