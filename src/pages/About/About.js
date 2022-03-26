@@ -12,9 +12,9 @@ function About() {
         <div className="container About-header">
           <h1> Something about myself </h1>
           <p>
-            Hello, my name is Momcilo Mitrovic and I’m a self-taught web designer full stack developer. I enjoy creating
-            cool designs, writing code and finding simple solutions to problems. I reside in Serbia, Belgrade and i am
-            17 years old.
+            Hello, my name is Momcilo Mitrovic and I’m a self-taught, full stack developer. I enjoy creating cool
+            designs, writing code and finding simple solutions to problems. I reside in Serbia, Belgrade and i am 17
+            years old.
           </p>
         </div>
       </div>
