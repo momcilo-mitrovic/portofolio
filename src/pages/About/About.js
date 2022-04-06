@@ -60,6 +60,12 @@ function About() {
           <li>Figma for designing user interfaces</li>
           <li>Adobe Photoshop for editing pictures and photographs.</li>
         </ul>
+        <h2>My Resume</h2>
+        <p>
+          <a href="https://drive.google.com/file/d/1tqSEv6ZvoAis7pZwGmk8IAXiigEVE8te/view?usp=sharing">
+            Download my Resume
+          </a>
+        </p>
       </div>
     </div>
   )
