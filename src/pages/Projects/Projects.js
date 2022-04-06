@@ -1,4 +1,5 @@
 import './Projects.scss'
+import { Helmet } from 'react-helmet'
 
 function requestUserRepos(username) {
   // Create new XMLHttpRequest object
@@ -67,6 +68,10 @@ function requestUserRepos(username) {
 function Projects() {
   return (
     <div className="Projects">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Momcilo Mitrovic Portofolio Projects</title>
+      </Helmet>
       <div className="Projects-header-container">
         <div className="container Projects-header">
           <h1>Projects</h1>
